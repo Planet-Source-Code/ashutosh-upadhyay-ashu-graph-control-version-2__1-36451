@@ -1,0 +1,204 @@
+[Root]
+Most Recent Package=AshuGraphControl
+
+
+[Package|AshuGraphControl Script|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Ashutosh\VB\Garbage\GraphControl\Package
+Controls Design-Time Support=Yes
+
+[Package|AshuGraphControl Script|Configure DAO ISAMs]
+Applicable=No
+
+[Package|AshuGraphControl Script|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|AshuGraphControl Script|Files Found]
+
+[Package|AshuGraphControl Script|Files Released]
+
+[Package|AshuGraphControl Script|Missing Dependency Information]
+
+[Package|AshuGraphControl Script|Out-of-Date Dependency Information]
+
+[Package|AshuGraphControl Script|Files Added]
+C:\WINDOWS\SYSTEM\MsStkPrp.dll=This file is needed for usercontrol design-time support.
+
+[Package|AshuGraphControl Script|Files Removed]
+
+[Package|AshuGraphControl Script|Files In Project]
+C:\Ashutosh\VB\Garbage\GraphControl\AshuGraphControl.ocx=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=Yes
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\WINDOWS\SYSTEM\MSSTKPRP.DLL=Yes
+
+[Package|AshuGraphControl Script|Configure Registry Files]
+Applicable=No
+
+[Package|AshuGraphControl Script|Configure Remote Servers]
+Applicable=No
+
+[Package|AshuGraphControl Script|Install Locations]
+C:\Ashutosh\VB\Garbage\GraphControl\AshuGraphControl.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\MSSTKPRP.DLL=$(WinSysPath)
+
+[Package|AshuGraphControl Script|Configure Shared Files]
+Applicable=No
+
+[Package|AshuGraphControl Script|Distribution]
+Type=multi
+Size=1.2 MB
+Title=Welcome To Ashu Graph Control  Installation
+
+[Package|AshuGraphControl Script|IconGroups]
+Group0=Ashu Graph Control
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|AshuGraphControl Script|Ashu Graph Control]
+Icon1=SETUP.EXE
+Title1=Setup Program
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|AshuGraphControl Script|Package]
+PackageFolder=C:\Ashutosh\VB\Garbage\GraphControl\Package
+ProjectFolder=C:\Ashutosh\VB\Garbage\GraphControl
+ServerSideCab=
+File1=C:\Ashutosh\VB\Garbage\GraphControl\Package\setup.exe
+File2=C:\Ashutosh\VB\Garbage\GraphControl\Package\Setup.Lst
+File3=C:\Ashutosh\VB\Garbage\GraphControl\Package\AshuGr1.CAB
+File4=C:\Ashutosh\VB\Garbage\GraphControl\Package\AshuGr2.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz
+
+
+[Package|AshuGraphControl|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Ashutosh\VB\Garbage\GraphControl\Package
+Controls Design-Time Support=Yes
+
+[Package|AshuGraphControl|Configure DAO ISAMs]
+Applicable=No
+
+[Package|AshuGraphControl|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|AshuGraphControl|Files Found]
+
+[Package|AshuGraphControl|Files Released]
+
+[Package|AshuGraphControl|Missing Dependency Information]
+C:\Program Files\Microsoft Office\Office\EXCEL9.OLB=
+
+[Package|AshuGraphControl|Out-of-Date Dependency Information]
+
+[Package|AshuGraphControl|Files Added]
+C:\WINDOWS\SYSTEM\MsStkPrp.dll=This file is needed for usercontrol design-time support.
+C:\Ashutosh\VB\Garbage\GraphControl\AshuGraph Control.htm=
+
+[Package|AshuGraphControl|Files Removed]
+
+[Package|AshuGraphControl|Files In Project]
+C:\Ashutosh\VB\Garbage\GraphControl\AshuGraphControl.ocx=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=Yes
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Office\Office\EXCEL9.OLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\WINDOWS\SYSTEM\MSSTKPRP.DLL=Yes
+C:\Ashutosh\VB\Garbage\GraphControl\AshuGraph Control.htm=Yes
+
+[Package|AshuGraphControl|Configure Registry Files]
+Applicable=No
+
+[Package|AshuGraphControl|Configure Remote Servers]
+Applicable=No
+
+[Package|AshuGraphControl|Install Locations]
+C:\Ashutosh\VB\Garbage\GraphControl\AshuGraphControl.ocx=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Office\Office\EXCEL9.OLB=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\MSSTKPRP.DLL=$(WinSysPath)
+C:\Ashutosh\VB\Garbage\GraphControl\AshuGraph Control.htm=$(AppPath)
+
+[Package|AshuGraphControl|Configure Shared Files]
+Applicable=Yes
+C:\Ashutosh\VB\Garbage\GraphControl\AshuGraphControl.ocx=Yes
+C:\Ashutosh\VB\Garbage\GraphControl\AshuGraph Control.htm=No
+
+[Package|AshuGraphControl|Distribution]
+Type=multi
+Size=1.2 MB
+Title=Welcome To AshuGraphControl Installation
+
+[Package|AshuGraphControl|IconGroups]
+Group0=AshuGraphControl
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|AshuGraphControl|AshuGraphControl]
+Icon1=AshuGraphControl.ocx
+Title1=Active X Control
+StartIn1=$(AppPath)
+Key1=Icon1
+Icon2=SETUP1.EXE
+Title2=Install Me
+StartIn2=$(AppPath)
+Key2=Icon2
+Icon3=ST6UNST.EXE
+Title3=uninstall Me
+StartIn3=$(AppPath)
+Key3=Icon3
+Icon4="AshuGraph Control.htm"
+Title4=Html Help
+StartIn4=$(AppPath)
+Key4=Icon7
+
+[Package|AshuGraphControl|Package]
+PackageFolder=C:\Ashutosh\VB\Garbage\GraphControl\Package
+ProjectFolder=C:\Ashutosh\VB\Garbage\GraphControl
+ServerSideCab=
+File1=C:\Ashutosh\VB\Garbage\GraphControl\Package\setup.exe
+File2=C:\Ashutosh\VB\Garbage\GraphControl\Package\Setup.Lst
+File3=C:\Ashutosh\VB\Garbage\GraphControl\Package\AshuGr1.CAB
+File4=C:\Ashutosh\VB\Garbage\GraphControl\Package\AshuGr2.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz

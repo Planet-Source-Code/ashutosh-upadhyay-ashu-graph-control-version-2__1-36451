@@ -1,0 +1,118 @@
+VERSION 5.00
+Begin VB.PropertyPage YScale 
+   Caption         =   "YScale"
+   ClientHeight    =   3492
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   5928
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   3492
+   ScaleWidth      =   5928
+   Begin VB.TextBox txtYScaleWidth 
+      Height          =   330
+      Left            =   90
+      TabIndex        =   7
+      Top             =   2320
+      Width           =   2700
+   End
+   Begin VB.TextBox txtYMinPosition 
+      Height          =   330
+      Left            =   90
+      TabIndex        =   5
+      Top             =   1670
+      Width           =   2700
+   End
+   Begin VB.TextBox txtYGap 
+      Height          =   330
+      Left            =   90
+      TabIndex        =   3
+      Top             =   1020
+      Width           =   2700
+   End
+   Begin VB.TextBox txtYUnitToPixels 
+      Height          =   330
+      Left            =   90
+      TabIndex        =   1
+      Top             =   370
+      Width           =   2700
+   End
+   Begin VB.Label lblYScaleWidth 
+      Caption         =   "YScaleWidth:"
+      ForeColor       =   &H8000000D&
+      Height          =   240
+      Left            =   90
+      TabIndex        =   6
+      Top             =   2070
+      Width           =   2700
+   End
+   Begin VB.Label lblYMinPosition 
+      Caption         =   "YMinPosition:"
+      ForeColor       =   &H8000000D&
+      Height          =   240
+      Left            =   120
+      TabIndex        =   4
+      Top             =   1416
+      Width           =   2700
+   End
+   Begin VB.Label lblYGap 
+      Caption         =   "YGap:"
+      ForeColor       =   &H8000000D&
+      Height          =   240
+      Left            =   90
+      TabIndex        =   2
+      Top             =   770
+      Width           =   2700
+   End
+   Begin VB.Label lblYUnitToPixels 
+      Caption         =   "YUnitToPixels:"
+      ForeColor       =   &H8000000D&
+      Height          =   240
+      Left            =   90
+      TabIndex        =   0
+      Top             =   120
+      Width           =   2700
+   End
+End
+Attribute VB_Name = "YScale"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Private Sub txtYScaleWidth_Change()
+    Changed = True
+End Sub
+
+
+Private Sub txtYMinPosition_Change()
+    Changed = True
+End Sub
+
+
+Private Sub txtYGap_Change()
+    Changed = True
+End Sub
+
+
+Private Sub txtYUnitToPixels_Change()
+    Changed = True
+End Sub
+
+
+Private Sub PropertyPage_ApplyChanges()
+    SelectedControls(0).YUnitToPixels = txtYUnitToPixels.Text
+    SelectedControls(0).YScaleWidth = txtYScaleWidth.Text
+    SelectedControls(0).YMinPosition = txtYMinPosition.Text
+    SelectedControls(0).YGap = txtYGap.Text
+    
+End Sub
+
+
+Private Sub PropertyPage_SelectionChanged()
+txtYUnitToPixels.Text = SelectedControls(0).YUnitToPixels
+    txtYScaleWidth.Text = SelectedControls(0).YScaleWidth
+    txtYMinPosition.Text = SelectedControls(0).YMinPosition
+    txtYGap.Text = SelectedControls(0).YGap
+    
+End Sub
+
+

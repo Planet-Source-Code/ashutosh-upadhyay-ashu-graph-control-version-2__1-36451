@@ -1,0 +1,449 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./AshuGraph%20Control_files/filelist.xml">
+<title>AshuGraph Control</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>A.K. Upadhyay</o:Author>
+  <o:LastAuthor>A.K. Upadhyay</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>12</o:TotalTime>
+  <o:Created>2002-07-02T04:56:00Z</o:Created>
+  <o:LastSaved>2002-07-04T08:06:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>1044</o:Words>
+  <o:Characters>5954</o:Characters>
+  <o:Company>BARC</o:Company>
+  <o:Lines>49</o:Lines>
+  <o:Paragraphs>11</o:Paragraphs>
+  <o:CharactersWithSpaces>7311</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:fuchsia;}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:blue;
+	mso-font-kerning:0pt;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1>AshuGraph Control</h1>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>I tried to remove all bugs from my previous submission. And
+now it can draw also negative points. </p>
+
+<p class=MsoNormal>Now it supports property pages &amp; popUpMenu. It can send
+to data to Excel . It can </p>
+
+<p class=MsoNormal>save data in text file and further can read from text
+file.It can copy graphs to clipboard as bitmaps.</p>
+
+<p class=MsoNormal>Plot more than one Graphs , Can Print<span
+style="mso-spacerun: yes">  </span>them, you can customize the colors of graph
+and scales</p>
+
+<p class=MsoNormal>u can scroll graph ,<span style="mso-spacerun: yes"> 
+</span>can track mouse points, can draw gridlines.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>An excellent graph control with its limitations. user
+draw<span style="mso-spacerun: yes">  </span>graph in own units (whatever it
+may)</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b><span style='color:blue'>How to use :<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style='color:#33CC33'>1.<span style="mso-spacerun:
+yes">  </span>Initalization:</span><span style="mso-spacerun: yes">       
+</span>Set Simple Properties in design mode</p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">         </span>BackColor</i>
+: backcolor of graph control</p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">        </span>Font</i> :
+font in which scales(horizontal &amp; vetical)<span style="mso-spacerun: yes"> 
+</span>will be dispalyed</p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">       </span>Forecolor</i>
+: decides the colors of scales (horizontal &amp; vertical)</p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">       </span>GridColor</i>:
+decides the color of grids if ShowGrids prperty is true</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">       </span><i>TooltipBkColor</i>
+: used to track &amp; display <span style="mso-spacerun: yes"> </span>data
+points(X,Y) as tooltip when mouse moves over graph<span style="mso-spacerun:
+yes">  </span>and TrackMousePointer property is true</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">      
+</span>ToolTipForeColor</i> : same as above</p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">     
+</span>TrackMousePointer</i> :<span style="mso-spacerun: yes">  </span>whether
+track points when mouse move, i.e. when mouse move datapoints (x,y) should be
+displayed at location of mouse pointer</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                                             </span>can be changed in run
+time</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">      </span><i>XGap ,YGap</i>
+:<span style="mso-spacerun: yes">   </span>in user units, the interval on
+scales(horizontal &amp; vertical)<span style="mso-spacerun: yes">  </span>at
+which<span style="mso-spacerun: yes">  </span>values are marked</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span><i>XMinPosition
+,YMinPosition</i>:in user units, Minimum position of scales , should not
+negative, usually 0.00</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">  </span><i>XUnitToPixel,
+YUnitToPixels</i>: how to map user units to pixels, i.e., 1 user unit in X
+direction<span style="mso-spacerun: yes">  </span>= ? pixels</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                                                    </span>for example,
+user can map 1 meter/second<span style="mso-spacerun: yes">  </span>to 2 pixels
+, if speed is in vertical direction , by setting m_YUnitToPixels = 2</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><i>XScaleHeight ,YScaleWidth</i>: user can change the scales
+' width , depening upon font &amp; font sizes he uses for scales</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style='color:lime'>2. Initialization at run time<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">      </span><span
+style="mso-spacerun: yes"> </span>NOTE:</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                    
+</span>Presently maximum limit on No of Graphs you can draw in control is 5 and
+you can change it by </p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                    
+</span>changing the value of constant<span style="mso-spacerun: yes"> 
+</span>MAX_NO_OF_GRAPHS in source code</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><u><span style='color:#333399'><span style="mso-spacerun:
+yes">       </span>InitializeMe</span></u> :call it<span style="mso-spacerun:
+yes">  </span>when<span style="mso-spacerun: yes">  </span>your program strats
+or when you want to remove all graphs from control, if you are removing graphs
+, then </p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                            
+</span>after calling it, call invalidate()</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">   </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style='color:lime'>3.How to<span style="mso-spacerun:
+yes">  </span>Add a Graph ?<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">         </span>3.1 First
+find the free index of graph<span style="mso-spacerun: yes">  </span>by calling
+<u><span style='color:#333399'>GetFreeGraph<o:p></o:p></span></u></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">              
+</span>e.g.<span style="mso-spacerun: yes">   </span>dim graphNo as long</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                    </span>graphNo
+= ashugraphcontrol1. Getfreegraph</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                   
+</span>On failure it returns -1, it means you cannot draw more graphs in
+control.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">         </span>3.2 now add
+points to graph by calling <span style='color:#333399'>AddData()<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">              </span>e.g.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                     
+</span>for i = 1 to<span style="mso-spacerun: yes">  </span>200</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                              </span>'calculate x and y</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                               </span>ashugraphcontrol1.AddData(x,y,graphNo)</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                      
+</span>next i</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">           </span>3.3 now
+set color and drawstyle</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                 </span>e.g.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">    </span><span
+style="mso-spacerun: yes">               </span>ashugraphcontrol1.<span
+style='color:#333399'>SetColor</span>(color,graphNo)<span style="mso-spacerun:
+yes">  </span>'''color = rgb(200,200,0)</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                  
+</span>ashugraphcontrol1.<span style='color:#333399'>SetDrawStyle</span>(graphNo,drawstyle)</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                
+</span>''''DrawStyle 0 means draw points as pixels (default)</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                 
+</span>''''drawstyle 1 means join points using lines (line clipping doesn't
+support)</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                  
+</span>''''drawstyle 2 means draw points as square</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                  
+</span>''''drawstyle 3 means draw points as square and join them by lines</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                </span>''''
+any other values keep graph invisible</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">         </span>3.4<span
+style="mso-spacerun: yes">   </span>now call <span style='color:#333399'>invalidate()</span>
+to update control</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">                     
+</span>ashugraphcontrol1.<span style='color:#333399'>Invalidate</span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b><span style='color:blue'>Functions:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">     </span>Invalidate():</i>
+always call, when u make any cahnges in graphs , i.e. adding a point to graph,
+deleting a graph, changing a point of graph</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                               </span>it refreshes graph control with new
+values</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">      </span><i>SetColor(
+color in rgb, graph no)</i> : display a graph ( graph no ) with specified
+color<span style="mso-spacerun: yes">      </span></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span><i>AddData(x,y,graphNO)</i>
+: add point x,y to graph no graphNo</p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">      
+</span>GetData(x,y,index,graphNo):</i> retrieve the data x,y from graph
+graphNo, at specific index ( index<span style="mso-spacerun: yes">  </span>in
+which order you added the data)</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                                                          </span>if
+success return true</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">      
+</span>SetData(x,y,index,graphNo):</i> change the data x,y at specific index in
+graph graphNo ; cannot be used to add data to graph</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                                                        </span>(Index - in
+which order you added data to this graph) if success return true</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">          </span></p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">      
+</span>RemoveGraph(graphNo) :</i><span style="mso-spacerun: yes"> 
+</span>doesn't display graph , you can use this graphNo to add new graph to
+control, after using this call Invalidate</p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">     
+</span>DrawStyle(graphno, drawstyle);</i>''''DrawStyle 0 means draw points as
+pixels</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                                                     </span><span
+style="mso-spacerun: yes">         </span>''''drawstyle 1 means join points
+using lines (line clipping doesn't support)</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                                                            
+</span>''''drawstyle 2 means draw points as square</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                                                           </span>''''drawstyle
+3 means draw points as square and join them by lines</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">    
+</span>SaveGraphInTextFile(GraphNo,filename):</i> save graph indexed by graphno
+in file named by filename</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><i>ReadGraphFromTextFile(fielname,resetsetting as boolean):</i>
+read one graph from<span style="mso-spacerun: yes">  </span>a file and second
+parameter decide whether to reset setting of controls according to new graph or
+not;;<span style="mso-spacerun: yes">  </span>usually , we pass false, we
+should pass true when there is no other graph is in the control.<span
+style="mso-spacerun: yes">   </span>It returns the index of new graph.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">       
+</span>SendToExcel():</i><span style="mso-spacerun: yes">            </span><span
+style="mso-spacerun: yes">   </span>Sends All Data to graph in following format</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                                                  </span>graph0<span
+style="mso-spacerun: yes">                       </span>graph1<span
+style="mso-spacerun: yes">                  </span>graph2<span
+style="mso-spacerun: yes">          </span>.....</p>
+
+<p class=MsoNormal><span style="mso-spacerun:
+yes">                                               </span>x<span
+style="mso-spacerun: yes">                </span>y<span style="mso-spacerun:
+yes">               </span>x<span style="mso-spacerun: yes">   </span><span
+style="mso-spacerun: yes">         </span>y<span style="mso-spacerun:
+yes">                 </span>x<span style="mso-spacerun: yes">          
+</span>y<span style="mso-spacerun: yes">      </span>........</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><i><span style="mso-spacerun: yes">        
+</span>DrawDerivativeForGraph(graphno) :</i><span style="mso-spacerun: yes"> 
+</span>try to draw derivative of graph graphno , No efficient, returns index of
+new graph</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">        </span><i>SetName(name,
+graphNo):</i> Assigns a name to a graph ; the name will be used to identify
+graph in MS-excel.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">        </span><i>ShowBusyMessage(true/false):</i>
+it will show &quot;Busy...&quot; on control during lenghty operations.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:blue'>Printing:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span><span
+style='color:blue'>PrintSetting</span>(leftMargin in Pixels, top Margins in
+Pixels,Header for graph , label for x axis, label for y axis, variable to
+decide to print page no( 0 for don't print , 1 for print on top, 2<span
+style="mso-spacerun: yes">  </span>for print on bottom),zoom factor for zooming
+printing<span style="mso-spacerun: yes">  </span>of graph ( in percentage, for
+simple printing value should be 100),PaperSize<span style="mso-spacerun:
+yes">   </span>= 9 for A4 size ; = 10 for A4 small size;<span
+style="mso-spacerun: yes">  </span>= 1 for letter size<span
+style="mso-spacerun: yes">  </span>; = 8 for A3 size; = 11 for a5 size(for more
+see help on &quot;printer&quot; object in vb editor, print quality<span
+style="mso-spacerun: yes">  </span>= -1 for draft printting<span
+style="mso-spacerun: yes">  </span>and<span style="mso-spacerun: yes"> 
+</span>= - 4 for high resolution)</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style='color:blue'><span style="mso-spacerun: yes">  
+</span>PrintMe()</span><span style="mso-spacerun: yes">  </span>: to print
+graph from your default printer</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:blue'>Printing From PaintBrush:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">         </span>1.<span
+style="mso-spacerun: yes">   </span>right click at control </p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">         </span>2.<span
+style="mso-spacerun: yes">  </span>choose copy or copy all ( copy for only
+visible portion and</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">              </span>copy
+all for whole graph) ; graph will be copied to clipboard; it</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">               </span>will
+take a little time.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">          </span>3.open
+PaintBrush , Paste Image, See Print Preview, and Print Image.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+VERSION 5.00
+Begin VB.PropertyPage Options 
+   Caption         =   "Options"
+   ClientHeight    =   3492
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   5928
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   3492
+   ScaleWidth      =   5928
+   Begin VB.TextBox txtMousePointer 
+      Height          =   330
+      Left            =   3000
+      TabIndex        =   8
+      Top             =   370
+      Width           =   2700
+   End
+   Begin VB.CheckBox chkShowGrids 
+      Caption         =   "ShowGrids"
+      ForeColor       =   &H8000000D&
+      Height          =   285
+      Left            =   90
+      TabIndex        =   6
+      Top             =   2720
+      Width           =   2700
+   End
+   Begin VB.CheckBox chkTrackMousePointer 
+      Caption         =   "TrackMousePointer"
+      ForeColor       =   &H8000000D&
+      Height          =   285
+      Left            =   90
+      TabIndex        =   5
+      Top             =   2070
+      Width           =   2700
+   End
+   Begin VB.CheckBox chkEnabled 
+      Caption         =   "Enabled"
+      Height          =   285
+      Left            =   90
+      TabIndex        =   4
+      Top             =   1420
+      Width           =   2700
+   End
+   Begin VB.TextBox txtBorderStyle 
+      Height          =   330
+      Left            =   90
+      TabIndex        =   3
+      Top             =   1020
+      Width           =   2700
+   End
+   Begin VB.TextBox txtAppearance 
+      Height          =   330
+      Left            =   90
+      TabIndex        =   1
+      Top             =   370
+      Width           =   2700
+   End
+   Begin VB.Label lblMousePointer 
+      Caption         =   "MousePointer:"
+      Height          =   240
+      Left            =   3000
+      TabIndex        =   7
+      Top             =   120
+      Width           =   2700
+   End
+   Begin VB.Label lblBorderStyle 
+      Caption         =   "BorderStyle:"
+      Height          =   240
+      Left            =   90
+      TabIndex        =   2
+      Top             =   770
+      Width           =   2700
+   End
+   Begin VB.Label lblAppearance 
+      Caption         =   "Appearance:"
+      Height          =   240
+      Left            =   90
+      TabIndex        =   0
+      Top             =   120
+      Width           =   2700
+   End
+End
+Attribute VB_Name = "Options"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Private Sub txtMousePointer_Change()
+    Changed = True
+End Sub
+
+
+Private Sub chkShowGrids_Click()
+    Changed = True
+End Sub
+
+
+Private Sub chkTrackMousePointer_Click()
+    Changed = True
+End Sub
+
+
+Private Sub chkEnabled_Click()
+    Changed = True
+End Sub
+
+
+Private Sub txtBorderStyle_Change()
+    Changed = True
+End Sub
+
+
+Private Sub txtAppearance_Change()
+    Changed = True
+End Sub
+
+
+Private Sub PropertyPage_ApplyChanges()
+    SelectedControls(0).MousePointer = txtMousePointer.Text
+    SelectedControls(0).ShowGrids = (chkShowGrids.Value = vbChecked)
+    SelectedControls(0).TrackMousePointer = (chkTrackMousePointer.Value = vbChecked)
+    SelectedControls(0).Enabled = (chkEnabled.Value = vbChecked)
+    SelectedControls(0).BorderStyle = txtBorderStyle.Text
+    SelectedControls(0).Appearance = txtAppearance.Text
+End Sub
+
+
+Private Sub PropertyPage_SelectionChanged()
+    txtMousePointer.Text = SelectedControls(0).MousePointer
+    chkShowGrids.Value = (SelectedControls(0).ShowGrids And vbChecked)
+    chkTrackMousePointer.Value = (SelectedControls(0).TrackMousePointer And vbChecked)
+    chkEnabled.Value = (SelectedControls(0).Enabled And vbChecked)
+    txtBorderStyle.Text = SelectedControls(0).BorderStyle
+    txtAppearance.Text = SelectedControls(0).Appearance
+End Sub
+
+
